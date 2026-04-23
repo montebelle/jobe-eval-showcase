@@ -1,0 +1,24 @@
+# Environment / secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Run outputs
+signals/
+reports/
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
