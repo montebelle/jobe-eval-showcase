@@ -29,8 +29,8 @@
 | Requirement | Evidence | Adjacency | Score |
 |---|---|---|---|
 | Time-series with rigor | A2: 13-model ensemble (SARIMAX, Holt-Winters, Panel RF/XGB/SVM + macro-enriched variants) with TimeSeriesSplit k=3–5, `DEFAULT_CV_GAP` to prevent leakage, Duan smearing bias correction (1983) replacing Jensen's inequality, moving block bootstrap for realistic error autocorrelation | Exact | 1.0 |
-| Causal inference with cross-fitting | A3: PropensityScoreAnalysis with cross-fitted propensity scores (5-fold), IPW, PSM (0.1 caliper), AIPW / Doubly Robust, Rosenbaum sensitivity bounds, Crump trimming [0.1, 0.9] | Exact | 1.0 |
-| Panel data | A2: 921 panels with lag features [1,2,3,6,12], OOB R² quality assessment, tier-specific Duan smearing from OOB residuals, Winsorized at 5% | Exact | 1.0 |
+| Causal inference with cross-fitting | A3: PropensityScoreAnalysis with cross-fitted propensity scores (5-fold), IPW, PSM (0.1 caliper), AIPW / Doubly Robust, Rosenbaum sensitivity bounds, Crump trimming [0.01, 0.99] | Exact | 1.0 |
+| Panel data | A2: 921 panels with lag features [1,3,6,12,24], OOB R² quality assessment, tier-specific Duan smearing from OOB residuals, Winsorized at 5% | Exact | 1.0 |
 | Proper hold-out design | A2: TimeSeriesSplit with `DEFAULT_CV_GAP` flagged for lag-6/12 insufficiency, A3: balance check SMD < 0.1 post-matching, minimum matched pairs ≥ 100 | Exact | 1.0 |
 | PhD in quantitative field | BS Applied Mathematics | Gap | 0.0 |
 | Production Python | A1, A2, all modules are production Python | Exact | 1.0 |
