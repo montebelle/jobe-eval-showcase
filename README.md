@@ -1,6 +1,9 @@
-# jobe-eval-showcase
+# Jobe — Evaluation Showcase
 
-Sample end-to-end evaluation output from [jobe](https://github.com/montebelle/jobe-skill) — a career-intelligence skill that runs the full discover → evaluate → apply → track pipeline over ML / AI / DS roles.
+**Real end-to-end output from [Jobe](https://github.com/montebelle/jobe-skill), a career-intelligence skill for Claude Code.** Jobe runs a discover → evaluate → apply → track pipeline over ML / AI / DS postings. This repo shows what it actually produces, so you can judge the tool from its output rather than its description.
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Source](https://img.shields.io/badge/source-jobe--skill-orange)](https://github.com/montebelle/jobe-skill)
 
 This repo is a **showcase**, not source code. Each walkthrough shows what jobe produces when run against a single job posting: the A–G block decomposition, the ghost-score breakdown, and a before/after tailoring pass. If you're evaluating jobe and want to see real output, read one of these. If you want the code, see [jobe](https://github.com/montebelle/jobe-skill).
 
